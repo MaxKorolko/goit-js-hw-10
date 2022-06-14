@@ -25,8 +25,8 @@ function onShowCountriesInf(event) {
     return;
   }
 
-  refs.countryInfoEl.innerHTML = '';
   refs.countryListEl.innerHTML = '';
+  refs.countryInfoEl.innerHTML = '';
 
   fetchCountries(name.trim())
     .then(countries => {
